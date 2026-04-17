@@ -1,0 +1,925 @@
+Build a fully responsive premium digital product selling website using only HTML, CSS, and Vanilla JavaScript.
+
+Important:
+- The entire project must be created in exactly 4 files only:
+  1. index.html
+  2. style.css
+  3. script.js
+  4. data.js
+- Do not use any framework.
+- Do not use any backend.
+- Do not use any build tools.
+- Do not create extra files.
+- All product data must be managed from data.js.
+- The website must look premium, modern, handcrafted, smooth, and production-quality, not like a generic AI template.
+- The theme must support both dark neon mode and elegant light mode with smooth transitions.
+- The entire website must be 100% responsive for mobile, tablet, laptop, and desktop.
+
+==================================================
+PROJECT GOAL
+==================================================
+
+I want a digital product selling website where I can:
+- add products
+- edit products
+- delete products
+- manage all products from data.js driven architecture
+- show products category-wise
+- search and filter products
+- support both free and paid digital products
+- show detailed product popup/modal on click
+- show multiple download links
+- show payment info for paid products
+- verify serial key for paid products before showing downloads
+- show direct downloads for free products
+- use a premium responsive UI with a dark neon style and smooth light mode
+
+This project is frontend-only, so structure the code in a scalable way. If any feature needs real backend security in production, implement the best possible frontend demo architecture and clearly separate the logic so it can be upgraded later.
+
+==================================================
+FILES AND RESPONSIBILITIES
+==================================================
+
+1) index.html
+- Contains the full page structure
+- Semantic HTML only
+- Includes header, sections, modals, forms, footer, and containers for dynamic rendering
+
+2) style.css
+- Contains all styling
+- Dark neon theme + light theme
+- Animations
+- Responsive design
+- Mobile navbar and hamburger menu
+- Modal, cards, forms, filters, footer, policy layout styling
+
+3) script.js
+- Contains all website logic
+- Rendering
+- Search
+- Filter
+- Sort
+- Category handling
+- Modal open/close
+- Add/Edit/Delete product logic
+- Form handling
+- Serial key verification
+- Theme switching
+- Mobile menu logic
+- Toast notifications
+- Stats calculations
+- Related product logic
+- Empty states
+
+4) data.js
+- Contains all products data
+- Contains categories data or derived categories
+- Contains payment/demo settings if needed
+- Contains serial keys for demo paid products
+- Works as the single source of truth
+
+==================================================
+HEADER / NAVBAR REQUIREMENTS
+==================================================
+
+Create a sticky responsive premium header.
+
+Header navigation must include these menu items:
+- Home
+- Products
+- About
+- Contact Us
+
+Header must also include:
+- brand logo / site name
+- search shortcut or search icon
+- filter button
+- theme toggle
+- Add Product button
+- mobile hamburger button
+
+Desktop behavior:
+- horizontal navigation
+- premium spacing
+- hover effects
+- sticky top navbar
+
+Mobile behavior:
+- hamburger menu
+- slide-in or dropdown mobile nav
+- smooth animation
+- tap-friendly menu items
+- close menu on nav click
+
+Navbar style:
+- dark mode: glassy dark neon premium header with subtle glow and border
+- light mode: elegant clean modern soft header
+- smooth transitions between themes
+
+==================================================
+MAIN SECTIONS REQUIRED
+==================================================
+
+The website must include the following main sections in this order:
+
+1. Header / Navbar
+2. Hero Section
+3. Product Controls Section
+4. Categories Section
+5. Featured Products Section
+6. All Products Section
+7. About Section
+8. Contact Us Section
+9. Footer
+
+==================================================
+HERO SECTION
+==================================================
+
+Create a premium hero section with:
+- bold heading
+- short subheading
+- supporting description
+- CTA buttons
+- small stats cards or counters
+
+Hero CTA buttons:
+- Browse Products
+- Add Product
+
+Hero stats:
+- total products
+- total free products
+- total paid products
+- total categories
+
+Hero style:
+- dark mode: deep neon aesthetic, subtle animated background, glowing accents, smooth gradients
+- light mode: clean premium soft gradients and smooth polished UI
+
+==================================================
+PRODUCT CONTROLS SECTION
+==================================================
+
+Create a powerful control/filter bar below the hero.
+
+Controls must include:
+- live search input
+- category filter
+- type filter:
+  - All
+  - Free
+  - Paid
+- sort dropdown:
+  - Newest
+  - Oldest
+  - A-Z
+  - Z-A
+  - Price Low to High
+  - Price High to Low
+- featured filter optional
+- reset filters button
+- total visible product count
+
+Behavior:
+- all filters must work together
+- live search must update results in real time
+- fully responsive layout
+- desktop: horizontal controls
+- mobile: stacked or collapsible controls
+
+==================================================
+CATEGORIES SECTION
+==================================================
+
+Create a dynamic categories section.
+
+Requirements:
+- categories should come from data.js or be derived from products
+- show each category as a chip/card/button
+- show product count per category
+- clicking a category filters the product grid
+- active category state must be clearly visible
+- categories must be responsive and touch-friendly
+
+Example categories:
+- HTML Templates
+- CSS Components
+- JavaScript Projects
+- Admin Dashboards
+- Portfolio Templates
+- UI Kits
+- Source Code
+- E-books
+- Tools
+- Plugins
+
+==================================================
+FEATURED PRODUCTS SECTION
+==================================================
+
+Create a separate featured products section.
+
+Requirements:
+- show only featured products
+- visually highlight featured cards
+- include quick access to details
+- if there are no featured products, section can hide automatically or show fallback message
+
+==================================================
+ALL PRODUCTS SECTION
+==================================================
+
+Create a responsive products grid.
+
+Each product card must show:
+- product image
+- product title
+- short description
+- category
+- tags or small badges
+- type badge
+- if free: show "Free"
+- if paid: show price near the title or badge
+- View Details button
+- optional admin actions: Edit / Delete
+
+Card behavior:
+- click card or details button to open modal
+- smooth hover animation
+- equal height cards
+- responsive grid:
+  - mobile: 1 column
+  - tablet: 2 columns
+  - desktop: 3 or 4 columns
+
+Card design:
+- premium layout
+- image with fixed aspect ratio
+- subtle shadow or glow
+- elegant spacing
+- free and paid visual distinction
+
+==================================================
+PRODUCT DETAILS MODAL / POPUP
+==================================================
+
+When any product is clicked, open a premium animated modal.
+
+The modal must show:
+- large preview image
+- product title
+- short description
+- full description
+- category
+- tags
+- features list
+- version
+- file size
+- last updated
+- compatibility
+- author
+- rating optional
+- downloads count optional
+- product type
+- if paid: price
+- demo/live preview button if available
+- image gallery optional
+- download section
+- related products section optional
+
+Modal behavior:
+- open with smooth animation
+- close button
+- backdrop click closes modal
+- ESC key closes modal
+- keyboard accessible
+- scrollable on mobile
+- sticky action area optional
+- must not overflow screen badly
+- must remain fully usable on small devices
+
+==================================================
+FREE PRODUCT FLOW
+==================================================
+
+For free products:
+- when product modal opens, direct download links must be visible immediately
+- multiple download buttons/links must be supported
+- example:
+  - Download ZIP
+  - Download Source Code
+  - Download Assets
+  - Mirror 1
+  - Mirror 2
+- clearly show Free badge
+
+==================================================
+PAID PRODUCT FLOW
+==================================================
+
+For paid products:
+- modal should initially hide download links
+- show:
+  - price
+  - payment info
+  - serial key input
+  - verify button
+  - optional Buy Now button
+- only after valid serial key verification should locked download section unlock
+- invalid key should show proper error state
+
+Paid flow sequence:
+1. Open product modal
+2. Show full product details
+3. Keep download section locked
+4. Show price and payment info
+5. Ask for serial key
+6. On valid key:
+   - show success state
+   - unlock downloads
+   - show multiple download buttons
+7. On invalid key:
+   - show error message
+   - keep downloads locked
+
+Since this is frontend-only:
+- use serial keys stored in data.js for demo purposes
+- keep the logic modular so it can later be replaced by API-based verification
+- clearly structure verification code for future backend upgrade
+
+==================================================
+PAYMENT INFO FOR PAID PRODUCTS
+==================================================
+
+Paid products must show payment info area.
+
+Include:
+- price
+- payment badge(s)
+- note for payment process
+- optional payment methods:
+  - UPI
+  - Paytm
+  - PhonePe
+  - Razorpay
+  - Stripe
+
+Optional payment area content:
+- Buy Now button
+- payment instructions
+- support contact
+- unlock note after valid serial key
+
+==================================================
+PRODUCT MANAGEMENT SYSTEM
+==================================================
+
+Create a frontend admin-style product management system.
+
+Must support:
+- Add Product
+- Edit Product
+- Delete Product
+
+This can be done via:
+- modal form
+or
+- slide-in panel form
+
+==================================================
+ADD PRODUCT FORM
+==================================================
+
+Create an Add Product form with these fields:
+
+Basic fields:
+- product id
+- title
+- short description
+- full description
+- category
+- type (free / paid)
+- price
+- currency
+- image URL
+- preview/demo URL
+- version
+- file size
+- compatibility
+- author
+- featured toggle
+- created date
+- updated date
+
+Dynamic/repeatable fields:
+- multiple download links
+- multiple tags
+- multiple features
+- multiple preview images
+- multiple serial keys for paid products
+
+Paid-only fields:
+- payment info
+- serial keys array
+
+Free-only behavior:
+- price can be hidden, disabled, or set to 0
+
+Form requirements:
+- clean layout
+- responsive
+- scrollable modal
+- save and cancel buttons always reachable
+- validation messages
+- proper labels
+
+==================================================
+EDIT PRODUCT
+==================================================
+
+Edit behavior:
+- each product card must have Edit button
+- clicking Edit opens prefilled form
+- all existing product details must load correctly
+- user can update any field
+- on save, UI must rerender instantly
+
+==================================================
+DELETE PRODUCT
+==================================================
+
+Delete behavior:
+- each product card must have Delete button
+- show delete confirmation
+- after delete, product grid updates instantly
+- show delete success toast
+
+==================================================
+OPTIONAL DATA PERSISTENCE ENHANCEMENT
+==================================================
+
+Because this project is frontend-only:
+- runtime changes may exist in memory only
+- optionally provide import/export JSON feature
+- optionally provide copy data object feature
+- optionally provide reset sample data button
+
+If persistence is added, do it cleanly and safely.
+If persistence is not used, keep architecture clear.
+
+==================================================
+DATA STRUCTURE IN DATA.JS
+==================================================
+
+Use a scalable product structure like this:
+
+const products = [
+  {
+    id: "prod-001",
+    title: "Neon Portfolio Template",
+    shortDescription: "Modern portfolio website template for developers.",
+    fullDescription: "Detailed long description here...",
+    category: "Portfolio Templates",
+    type: "paid",
+    price: 499,
+    currency: "INR",
+    image: "https://example.com/image.jpg",
+    previewImages: [
+      "https://example.com/preview1.jpg",
+      "https://example.com/preview2.jpg"
+    ],
+    demoLink: "https://example.com/demo",
+    downloadLinks: [
+      { label: "Download ZIP", url: "https://example.com/file1.zip" },
+      { label: "Source Code", url: "https://example.com/file2.zip" }
+    ],
+    tags: ["portfolio", "html", "css", "responsive"],
+    features: [
+      "Fully responsive layout",
+      "Dark and light mode",
+      "Clean code"
+    ],
+    version: "1.0.0",
+    fileSize: "12 MB",
+    compatibility: "HTML, CSS, JS",
+    author: "Rohit Kumar",
+    featured: true,
+    createdAt: "2026-04-17",
+    updatedAt: "2026-04-17",
+    rating: 4.8,
+    downloads: 120,
+    serialKeys: ["ABC123", "XYZ999", "NEON2026"],
+    paymentInfo: {
+      methods: ["UPI", "Razorpay", "Stripe"],
+      upiId: "demo@upi",
+      note: "Pay first and use a valid serial key to unlock downloads."
+    }
+  }
+];
+
+Also allow optional global objects like:
+- siteConfig
+- categories
+- footerLinks
+- contactInfo
+- socialLinks
+- paymentConfig
+- defaultImages
+
+==================================================
+JAVASCRIPT FUNCTIONAL REQUIREMENTS
+==================================================
+
+In script.js, create clean modular logic with functions such as:
+
+- initApp()
+- renderProducts(productsToRender)
+- renderFeaturedProducts()
+- renderCategories()
+- renderStats()
+- renderFooterLinks()
+- openProductModal(productId)
+- closeProductModal()
+- renderProductDetails(product)
+- renderRelatedProducts(product)
+- handleSearch()
+- handleCategoryFilter()
+- handleTypeFilter()
+- handleSort()
+- resetFilters()
+- getFilteredProducts()
+- openProductForm(mode, productId)
+- populateFormForEdit(product)
+- saveProduct()
+- deleteProduct(productId)
+- verifySerialKey(productId, enteredKey)
+- unlockDownloads(productId)
+- toggleTheme()
+- toggleMobileMenu()
+- showToast(message, type)
+- closeToast()
+- createDynamicField(type)
+- removeDynamicField()
+- validateProductForm()
+- handleEmptyState()
+- updateCounts()
+- smoothScrollToSection(sectionId)
+
+Use:
+- event delegation where useful
+- reusable helper functions
+- minimal repetitive DOM manipulation
+- clear code sections
+- maintainable naming conventions
+
+==================================================
+ABOUT SECTION
+==================================================
+
+Create a dedicated About section in the page.
+
+About section must include:
+- section title
+- short intro about the digital store
+- what kind of products are available
+- why users should trust the platform
+- benefits such as:
+  - premium digital resources
+  - instant access
+  - curated categories
+  - free and paid product support
+  - creator/developer friendly marketplace
+
+Optional About section items:
+- small feature cards
+- trust indicators
+- customer/developer focused copy
+- simple stats
+
+==================================================
+CONTACT US SECTION
+==================================================
+
+Create a dedicated Contact Us section in the page.
+
+Contact section must include:
+- section heading
+- support email
+- optional phone / WhatsApp / Telegram
+- contact form UI (frontend only)
+- message textarea
+- name field
+- email field
+- subject field optional
+- send button
+- support note
+- social links optional
+
+Behavior:
+- form can be demo-only frontend
+- show success toast on submit
+- validate required fields
+- responsive layout
+
+==================================================
+FOOTER REQUIREMENTS
+==================================================
+
+Create a premium multi-column footer.
+
+Footer must include these important policy/legal links:
+- Privacy Policy
+- Terms & Conditions
+- Copyright
+- Delivery Policy
+- Refund Policy
+
+Also include:
+- quick links:
+  - Home
+  - Products
+  - About
+  - Contact Us
+- short brand/store description
+- social links optional
+- payment badges optional
+- support/contact summary
+- copyright line
+
+Footer behavior:
+- footer links can scroll to internal sections or open policy modal blocks
+- policy links should be visible and clearly styled
+- layout must be fully responsive
+- use good spacing and hierarchy
+
+==================================================
+POLICY CONTENT HANDLING
+==================================================
+
+Since only one HTML file is allowed:
+- implement policy content using one of these:
+  1. modal popups
+  2. accordion sections
+  3. internal hidden panels
+- clicking footer policy links should open readable policy content
+- include placeholder but realistic legal/policy text structure for:
+  - Privacy Policy
+  - Terms & Conditions
+  - Delivery Policy
+  - Refund Policy
+- Copyright item can be shown as both a footer legal link and final copyright line
+
+==================================================
+UI / UX DESIGN DIRECTION
+==================================================
+
+The design must feel like a premium marketplace for developers and creators.
+
+Dark mode:
+- deep black / navy surfaces
+- neon cyan / electric blue / purple accents used carefully
+- subtle glow, not too much
+- modern shadows
+- glassmorphism where appropriate
+- animated ambient background
+- high contrast and readable typography
+
+Light mode:
+- premium clean white / gray surfaces
+- soft shadow depth
+- elegant borders
+- smooth transitions
+- polished professional appearance
+
+Visual quality:
+- handcrafted feeling
+- not generic
+- not overcrowded
+- strong hierarchy
+- clean spacing
+- premium card design
+- premium modal design
+- premium form styling
+
+==================================================
+ANIMATION REQUIREMENTS
+==================================================
+
+Include smooth, tasteful animations:
+- card hover lift
+- button hover glow
+- navbar transition
+- theme switch animation
+- modal open/close animation
+- hamburger transition
+- section reveal on scroll
+- active filter chip animation
+- toast animation
+- unlock downloads animation after key verification
+
+Also:
+- respect prefers-reduced-motion if possible
+- avoid excessive animation
+- keep everything smooth and premium
+
+==================================================
+RESPONSIVENESS REQUIREMENTS
+==================================================
+
+The entire website must be 100% responsive.
+
+Requirements:
+- mobile first
+- works from 320px width onward
+- touch-friendly UI
+- proper spacing on phones
+- tablet optimized layout
+- desktop premium layout
+- no overflow issues
+- no hidden save buttons in forms
+- modal must remain scrollable and usable on small screens
+- hamburger navigation for mobile
+- footer must stack nicely on mobile
+
+==================================================
+ACCESSIBILITY REQUIREMENTS
+==================================================
+
+Must include:
+- semantic HTML
+- proper heading hierarchy
+- labels for inputs
+- keyboard accessible buttons
+- visible focus states
+- ESC close modal
+- alt text for images
+- good contrast
+- accessible form validation
+- ARIA only where needed
+- accessible mobile menu
+- accessible modal behavior
+
+==================================================
+EMPTY STATES / EDGE CASES
+==================================================
+
+Handle all major edge cases:
+- no products found
+- invalid serial key
+- missing image fallback
+- no featured products
+- no category results
+- empty search results
+- no download links
+- edit/delete after filtering
+- very long descriptions
+- many tags or many download links
+- mobile modal overflow
+- paid product without serial key entered
+- form validation errors
+
+==================================================
+TOAST / FEEDBACK SYSTEM
+==================================================
+
+Add toast notifications for:
+- product added
+- product updated
+- product deleted
+- serial key verified
+- invalid serial key
+- filters reset
+- contact form submitted
+- error states where needed
+
+==================================================
+OPTIONAL NICE FEATURES
+==================================================
+
+If possible, also add:
+- related products in modal
+- load more button or pagination
+- skeleton loading UI
+- back to top button
+- wishlist icon demo
+- copy download link button
+- copy serial key button
+- share button demo
+- FAQ accordion above footer
+- newsletter UI demo
+- product stats badges
+- sticky filter bar on scroll
+
+==================================================
+CSS ARCHITECTURE
+==================================================
+
+Organize style.css like this:
+- root variables
+- dark/light theme variables
+- reset/base
+- typography
+- layout/container utilities
+- buttons
+- navbar
+- hero
+- controls/filter bar
+- category chips
+- cards
+- badges
+- featured section
+- products grid
+- about section
+- contact section
+- modal
+- forms
+- footer
+- policy popups/panels
+- toast
+- responsive breakpoints
+- animations
+- utility classes
+
+Use CSS variables for:
+- colors
+- typography sizes
+- spacing
+- radius
+- shadows
+- transitions
+- border colors
+- z-index layers
+
+==================================================
+HTML STRUCTURE
+==================================================
+
+Use a semantic structure similar to:
+
+<header>
+  <nav>...</nav>
+</header>
+
+<main>
+  <section id="home">...</section>
+  <section id="products">...</section>
+  <section id="about">...</section>
+  <section id="contact">...</section>
+</main>
+
+<!-- Product Modal -->
+<!-- Add/Edit Product Modal -->
+<!-- Policy Modal -->
+<!-- Toast Container -->
+
+<footer>
+  ...
+</footer>
+
+==================================================
+SAMPLE DATA REQUIREMENT
+==================================================
+
+In data.js, include at least 10 to 12 realistic demo products.
+
+Requirements:
+- mix of free and paid products
+- multiple categories
+- multiple tags
+- multiple download links
+- some featured products
+- some free HTML/CSS templates
+- some paid source code bundles
+- realistic descriptions
+- demo serial keys for paid products
+- realistic prices in INR
+- realistic preview image URLs
+- realistic authors, versions, file sizes, and compatibility fields
+
+==================================================
+FINAL OUTPUT REQUIREMENT
+==================================================
+
+Return complete working code for all 4 files:
+1. index.html
+2. style.css
+3. script.js
+4. data.js
+
+Make sure:
+- all features work
+- layout is premium
+- mobile responsive is perfect
+- dark and light theme both work
+- search, filter, sort, modal, add, edit, delete all work
+- paid and free product logic works
+- serial key verification works in frontend demo mode
+- footer policy links work
+- Home, Products, About, Contact Us nav links work
+- code is complete and ready to run
+
+Do not give incomplete snippets.
+Do not skip any file.
+Do not give pseudo-code.
+Give full working code only.

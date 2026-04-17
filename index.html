@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DevVault — Premium digital resources for developers and creators. HTML templates, source code bundles, UI kits, e-books, and tools." />
+  <title>DevVault — Premium Digital Resources</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================== HEADER ============================== -->
+  <header id="site-header" role="banner">
+    <nav class="nav-container" aria-label="Main navigation">
+      <a href="#home" class="nav-brand" aria-label="DevVault Home">
+        <span class="brand-icon" aria-hidden="true">⬡</span>
+        <span class="brand-name">DevVault</span>
+      </a>
+
+      <ul class="nav-links" role="list" id="nav-menu">
+        <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+        <li><a href="#products" class="nav-link" data-section="products">Products</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact Us</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!--<button class="nav-btn icon-btn" id="search-toggle-btn" aria-label="Toggle search" title="Search products">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>-->
+        <button class="nav-btn icon-btn" id="theme-toggle-btn" aria-label="Toggle theme" title="Switch theme">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <!--<button class="nav-btn add-product-btn" id="add-product-nav-btn" aria-label="Add new product">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          <span>Add Product</span>
+        </button>-->
+        <button class="nav-btn icon-btn hamburger-btn" id="hamburger-btn" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="ham-line"></span>
+          <span class="ham-line"></span>
+          <span class="ham-line"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ============================== MAIN ============================== -->
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section" aria-labelledby="hero-heading">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-3" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot" aria-hidden="true"></span>
+          <span>Premium Developer Marketplace</span>
+        </div>
+        <h1 id="hero-heading" class="hero-title">
+          Build Faster With<br>
+          <span class="hero-title-accent">Premium Resources</span>
+        </h1>
+        <p class="hero-sub">Curated HTML templates, JavaScript bundles, UI kits, e-books &amp; tools crafted for developers and creators.</p>
+        <div class="hero-actions">
+          <a href="#products" class="btn btn-primary hero-cta-primary" id="hero-browse-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            Browse Products
+          </a>
+
+       
+
+          <!--<button class="btn btn-secondary hero-cta-secondary" id="hero-add-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+            Add Product
+          </button>-->
+        </div>
+        <div class="hero-stats" id="hero-stats" role="list" aria-label="Product statistics">
+          <!-- Stats populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT CONTROLS SECTION -->
+    <section class="controls-section" id="products-controls" aria-label="Product filters and search">
+      <div class="container">
+        <div class="controls-bar">
+          <div class="search-wrapper">
+            <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            <input type="search" id="search-input" class="search-input" placeholder="Search products..." aria-label="Search products" autocomplete="off" />
+            <button class="search-clear-btn" id="search-clear-btn" aria-label="Clear search" hidden>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+            </button>
+          </div>
+
+          <div class="filter-group">
+            <select id="category-filter" class="filter-select" aria-label="Filter by category">
+              <option value="">All Categories</option>
+            </select>
+
+            <select id="type-filter" class="filter-select" aria-label="Filter by type">
+              <option value="">All Types</option>
+              <option value="free">Free</option>
+              <option value="paid">Paid</option>
+            </select>
+
+            <select id="sort-filter" class="filter-select" aria-label="Sort products">
+              <option value="newest">Newest First</option>
+              <option value="oldest">Oldest First</option>
+              <option value="az">A → Z</option>
+              <option value="za">Z → A</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+            </select>
+          </div>
+
+          <div class="controls-meta">
+            <span class="product-count-badge" id="product-count-badge" aria-live="polite">
+              <span id="product-count-num">0</span> products
+            </span>
+            <button class="btn btn-ghost reset-btn" id="reset-filters-btn" aria-label="Reset all filters">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+              Reset
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIES SECTION -->
+    <section class="categories-section" id="categories-section" aria-labelledby="categories-heading">
+      <div class="container">
+        <h2 id="categories-heading" class="section-label">Browse by Category</h2>
+        <div class="categories-grid" id="categories-grid" role="list" aria-label="Product categories">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS -->
+    <section class="featured-section" id="featured-section" aria-labelledby="featured-heading">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 id="featured-heading" class="section-title">
+              <span class="section-title-accent">Featured</span> Products
+            </h2>
+            <p class="section-desc">Hand-picked premium resources for developers &amp; creators.</p>
+          </div>
+        </div>
+        <div class="products-grid featured-grid" id="featured-grid" role="list" aria-label="Featured products">
+          <!-- Populated by JS -->
+        </div>
+        <div class="empty-state" id="featured-empty" hidden>
+          <p>No featured products available right now.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ALL PRODUCTS SECTION -->
+    <section class="products-section" id="products" aria-labelledby="products-heading">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2 id="products-heading" class="section-title">
+              All <span class="section-title-accent">Products</span>
+            </h2>
+            <p class="section-desc">The full collection — free &amp; paid digital resources.</p>
+          </div>
+        </div>
+        <div class="products-grid" id="products-grid" role="list" aria-label="All products">
+          <!-- Populated by JS -->
+        </div>
+        <div class="empty-state" id="products-empty" hidden>
+          <div class="empty-icon" aria-hidden="true">🔍</div>
+          <h3>No products found</h3>
+          <p>Try adjusting your search or filters.</p>
+          <button class="btn btn-secondary" id="empty-reset-btn">Reset Filters</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header centered">
+          <h2 id="about-heading" class="section-title">About <span class="section-title-accent">DevVault</span></h2>
+          <p class="section-desc">A marketplace built by developers, for developers.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p class="about-lead">DevVault is a curated digital marketplace where developers and designers can discover, share, and sell premium digital resources.</p>
+            <p>From polished HTML templates and production-ready admin dashboards to in-depth e-books and JavaScript toolkits — every resource is hand-picked for quality and practical value.</p>
+            <p>Whether you're building your next project or looking to ship faster, DevVault has the resources you need.</p>
+          </div>
+          <div class="about-features-grid">
+            <div class="about-card">
+              <span class="about-card-icon" aria-hidden="true">⚡</span>
+              <h3>Instant Access</h3>
+              <p>Download immediately after purchase with serial key verification.</p>
+            </div>
+            <div class="about-card">
+              <span class="about-card-icon" aria-hidden="true">🎯</span>
+              <h3>Curated Quality</h3>
+              <p>Every product is reviewed to meet premium quality standards.</p>
+            </div>
+            <div class="about-card">
+              <span class="about-card-icon" aria-hidden="true">🆓</span>
+              <h3>Free &amp; Paid</h3>
+              <p>Hundreds of free resources alongside premium paid products.</p>
+            </div>
+            <div class="about-card">
+              <span class="about-card-icon" aria-hidden="true">🛡️</span>
+              <h3>Secure Platform</h3>
+              <p>Safe payment processing with multiple methods supported.</p>
+            </div>
+            <div class="about-card">
+              <span class="about-card-icon" aria-hidden="true">🔄</span>
+              <h3>Regular Updates</h3>
+              <p>Products are maintained and updated by their authors.</p>
+            </div>
+            <div class="about-card">
+              <span class="about-card-icon" aria-hidden="true">💬</span>
+              <h3>Support</h3>
+              <p>Dedicated support team available via email and chat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header centered">
+          <h2 id="contact-heading" class="section-title">Get in <span class="section-title-accent">Touch</span></h2>
+          <p class="section-desc">Questions, feedback, or support — we're here to help.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-item">
+              <span class="contact-icon" aria-hidden="true">📧</span>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:support@devvault.store">support@devvault.store</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon" aria-hidden="true">💬</span>
+              <div>
+                <strong>WhatsApp</strong>
+                <a href="https://wa.me/919876543210">+91 98765 43210</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon" aria-hidden="true">✈️</span>
+              <div>
+                <strong>Telegram</strong>
+                <a href="https://t.me/devvault_support">@devvault_support</a>
+              </div>
+            </div>
+            <div class="contact-social">
+              <a href="#" class="social-link" aria-label="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="YouTube">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+              </a>
+            </div>
+          </div>
+          <form class="contact-form" id="contact-form" novalidate aria-label="Contact form">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="contact-name">Your Name *</label>
+                <input type="text" id="contact-name" name="name" placeholder="Rohit Kumar" required autocomplete="name" />
+                <span class="field-error" id="contact-name-error" role="alert"></span>
+              </div>
+              <div class="form-field">
+                <label for="contact-email">Email Address *</label>
+                <input type="email" id="contact-email" name="email" placeholder="you@example.com" required autocomplete="email" />
+                <span class="field-error" id="contact-email-error" role="alert"></span>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="contact-subject">Subject</label>
+              <input type="text" id="contact-subject" name="subject" placeholder="How can we help?" autocomplete="off" />
+            </div>
+            <div class="form-field">
+              <label for="contact-message">Message *</label>
+              <textarea id="contact-message" name="message" rows="5" placeholder="Tell us what's on your mind..." required></textarea>
+              <span class="field-error" id="contact-message-error" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn-primary contact-submit-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4 20-7z"/><path d="M22 2 11 13"/></svg>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="site-footer" id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="#home" class="footer-brand" aria-label="DevVault Home">
+            <span class="brand-icon" aria-hidden="true">⬡</span>
+            <span class="brand-name">DevVault</span>
+          </a>
+          <p class="footer-brand-desc">Premium digital resources for developers &amp; creators. Build faster, ship better.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Quick Links</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#products" class="footer-link">Products</a></li>
+            <li><a href="#about" class="footer-link">About</a></li>
+            <li><a href="#contact" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Policies</h3>
+          <ul class="footer-links" role="list">
+            <li><button class="footer-policy-link" data-policy="privacy">Privacy Policy</button></li>
+            <li><button class="footer-policy-link" data-policy="terms">Terms &amp; Conditions</button></li>
+            <li><button class="footer-policy-link" data-policy="delivery">Delivery Policy</button></li>
+            <li><button class="footer-policy-link" data-policy="refund">Refund Policy</button></li>
+            <li><button class="footer-policy-link" data-policy="copyright">Copyright</button></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col-title">Support</h3>
+          <address class="footer-contact" style="font-style:normal;">
+            <p><a href="mailto:support@devvault.store">support@devvault.store</a></p>
+            <p><a href="https://wa.me/919876543210">+91 98765 43210</a></p>
+            <p>Mon–Sat, 9am–6pm IST</p>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; <span id="footer-year">2026</span> DevVault. All rights reserved.</p>
+        <p class="footer-made">Made with <span aria-label="love">♥</span> for developers</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================== PRODUCT DETAIL MODAL ============================== -->
+  <div class="modal-overlay" id="product-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-product-title" aria-hidden="true">
+    <div class="modal modal-product" id="product-modal">
+      <button class="modal-close-btn" id="product-modal-close" aria-label="Close product details">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="modal-body" id="product-modal-body">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================== PRODUCT FORM MODAL ============================== -->
+  <div class="modal-overlay" id="form-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="form-modal-title" aria-hidden="true">
+    <div class="modal modal-form" id="form-modal">
+      <div class="modal-header">
+        <h2 id="form-modal-title">Add Product</h2>
+        <button class="modal-close-btn" id="form-modal-close" aria-label="Close form">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="product-form" novalidate aria-label="Product form">
+          <input type="hidden" id="form-product-id" />
+
+          <div class="form-section-title">Basic Info</div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="form-title">Title *</label>
+              <input type="text" id="form-title" placeholder="Product name" required />
+              <span class="field-error" id="form-title-error" role="alert"></span>
+            </div>
+            <div class="form-field">
+              <label for="form-category">Category *</label>
+              <select id="form-category" required>
+                <option value="">Select category</option>
+              </select>
+              <span class="field-error" id="form-category-error" role="alert"></span>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="form-short-desc">Short Description *</label>
+            <input type="text" id="form-short-desc" placeholder="One-line summary" required />
+            <span class="field-error" id="form-short-desc-error" role="alert"></span>
+          </div>
+          <div class="form-field">
+            <label for="form-full-desc">Full Description</label>
+            <textarea id="form-full-desc" rows="4" placeholder="Detailed description of the product..."></textarea>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="form-type">Type *</label>
+              <select id="form-type" required>
+                <option value="free">Free</option>
+                <option value="paid">Paid</option>
+              </select>
+            </div>
+            <div class="form-field" id="price-field-group">
+              <label for="form-price">Price (INR)</label>
+              <input type="number" id="form-price" placeholder="499" min="0" />
+            </div>
+          </div>
+
+          <div class="form-section-title">Media &amp; Links</div>
+          <div class="form-field">
+            <label for="form-image">Image URL *</label>
+            <input type="url" id="form-image" placeholder="https://example.com/image.jpg" required />
+            <span class="field-error" id="form-image-error" role="alert"></span>
+          </div>
+          <div class="form-field">
+            <label for="form-demo-link">Demo / Preview Link</label>
+            <input type="url" id="form-demo-link" placeholder="https://example.com/demo" />
+          </div>
+
+          <div class="form-section-title">Product Details</div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="form-version">Version</label>
+              <input type="text" id="form-version" placeholder="1.0.0" />
+            </div>
+            <div class="form-field">
+              <label for="form-file-size">File Size</label>
+              <input type="text" id="form-file-size" placeholder="12 MB" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="form-compatibility">Compatibility</label>
+              <input type="text" id="form-compatibility" placeholder="HTML5, CSS3, JS" />
+            </div>
+            <div class="form-field">
+              <label for="form-author">Author</label>
+              <input type="text" id="form-author" placeholder="Your Name" />
+            </div>
+          </div>
+          <div class="form-field form-toggle-field">
+            <label class="toggle-label">
+              <input type="checkbox" id="form-featured" class="toggle-input" />
+              <span class="toggle-switch" aria-hidden="true"></span>
+              <span>Mark as Featured</span>
+            </label>
+          </div>
+
+          <div class="form-section-title">Tags</div>
+          <div class="dynamic-list" id="tags-list">
+            <div class="dynamic-list-items" id="tags-items"></div>
+            <div class="dynamic-add-row">
+              <input type="text" id="tag-input" placeholder="Add tag and press Enter" class="dynamic-input" />
+              <button type="button" class="btn btn-ghost btn-sm" id="add-tag-btn">+ Add</button>
+            </div>
+          </div>
+
+          <div class="form-section-title">Features</div>
+          <div class="dynamic-list" id="features-list">
+            <div class="dynamic-list-items" id="features-items"></div>
+            <div class="dynamic-add-row">
+              <input type="text" id="feature-input" placeholder="Add a feature" class="dynamic-input" />
+              <button type="button" class="btn btn-ghost btn-sm" id="add-feature-btn">+ Add</button>
+            </div>
+          </div>
+
+          <div class="form-section-title">Download Links</div>
+          <div class="dynamic-list" id="downloads-list">
+            <div class="dynamic-list-items" id="downloads-items"></div>
+            <button type="button" class="btn btn-ghost btn-sm" id="add-download-btn">+ Add Download Link</button>
+          </div>
+
+          <div id="paid-fields-section" class="paid-fields-section" hidden>
+            <div class="form-section-title">Payment Info</div>
+            <div class="form-field">
+              <label for="form-upi-id">UPI ID</label>
+              <input type="text" id="form-upi-id" placeholder="yourname@upi" />
+            </div>
+            <div class="form-field">
+              <label for="form-payment-note">Payment Note</label>
+              <textarea id="form-payment-note" rows="2" placeholder="Instructions for buyer..."></textarea>
+            </div>
+            <div class="form-section-title">Serial Keys</div>
+            <div class="dynamic-list" id="keys-list">
+              <div class="dynamic-list-items" id="keys-items"></div>
+              <div class="dynamic-add-row">
+                <input type="text" id="key-input" placeholder="Add serial key" class="dynamic-input" />
+                <button type="button" class="btn btn-ghost btn-sm" id="add-key-btn">+ Add</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="btn btn-ghost" id="form-cancel-btn">Cancel</button>
+            <button type="submit" class="btn btn-primary" id="form-save-btn">Save Product</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================== POLICY MODAL ============================== -->
+  <div class="modal-overlay" id="policy-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="policy-modal-title" aria-hidden="true">
+    <div class="modal modal-policy" id="policy-modal">
+      <div class="modal-header">
+        <h2 id="policy-modal-title"></h2>
+        <button class="modal-close-btn" id="policy-modal-close" aria-label="Close policy">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+      <div class="modal-body policy-content" id="policy-modal-body">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- DELETE CONFIRM MODAL -->
+  <div class="modal-overlay" id="confirm-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="confirm-modal-title" aria-hidden="true">
+    <div class="modal modal-confirm" id="confirm-modal">
+      <div class="confirm-icon" aria-hidden="true">🗑️</div>
+      <h2 id="confirm-modal-title">Delete Product?</h2>
+      <p id="confirm-modal-desc">This action cannot be undone. The product will be permanently removed.</p>
+      <div class="confirm-actions">
+        <button class="btn btn-ghost" id="confirm-cancel-btn">Cancel</button>
+        <button class="btn btn-danger" id="confirm-delete-btn">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================== TOAST ============================== -->
+  <div class="toast-container" id="toast-container" aria-live="polite" aria-atomic="true" role="status"></div>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="back-to-top-btn" aria-label="Back to top" hidden>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+
+Free Product add sample code 
+
+{
+    id: "prod-012",
+    title: "Web Performance Optimization Toolkit",
+    shortDescription: "Scripts, tools, and checklists for optimizing web application performance.",
+    fullDescription: "A practical toolkit for web performance optimization. Includes automated audit scripts, image optimization tools, critical CSS extractor, lazy loading utilities, service worker template, performance budgeting guide, and a detailed checklist covering Core Web Vitals, resource hints, caching strategies, and more.",
+    category: "Tools",
+    type: "free",
+    price: 0,
+    currency: "INR",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80",
+    previewImages: [
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80",
+    ],
+    demoLink: null,
+    downloadLinks: [
+      { label: "Download Toolkit ZIP", url: "#" },
+      { label: "Download Checklist PDF", url: "#" },
+      { label: "View on GitHub", url: "#" },
+    ],
+    tags: ["performance", "tools", "web-vitals", "optimization", "free"],
+    features: [
+      "Core Web Vitals guide",
+      "Image optimization scripts",
+      "Lazy loading utility",
+      "Service worker template",
+      "Performance checklist",
+      "Caching strategy guide",
+    ],
+    version: "1.1.0",
+    fileSize: "1.8 MB",
+    compatibility: "Node.js 16+, Browsers",
+    author: "Siddharth Rao",
+    featured: false,
+    createdAt: "2025-12-20",
+    updatedAt: "2026-03-05",
+    rating: 4.7,
+    downloads: 1890,
+    serialKeys: [],
+    paymentInfo: null,
+  },
+
+
+
+
+
+  Paid Product add sample code 
+
+
+  {
+    id: "prod-002",
+    title: "AdminX Dashboard UI Kit",
+    shortDescription: "100+ premium admin dashboard components for modern web apps.",
+    fullDescription: "AdminX is a comprehensive admin dashboard UI kit packed with over 100 hand-crafted components. Includes data tables, charts, forms, modals, sidebars, cards, and more. Built with CSS Grid and Flexbox for maximum responsiveness. Perfect for SaaS products, internal tools, and management panels.",
+    category: "Admin Dashboards",
+    type: "paid",
+    price: 799,
+    currency: "INR",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+    previewImages: [
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
+    ],
+    demoLink: "https://example.com/adminx-demo",
+    downloadLinks: [
+      { label: "Download Full Kit", url: "#" },
+      { label: "Download Components Only", url: "#" },
+      { label: "Download Documentation", url: "#" },
+    ],
+    tags: ["admin", "dashboard", "ui-kit", "components", "css"],
+    features: [
+      "100+ UI components",
+      "Dark and light themes",
+      "Responsive grid layout",
+      "Chart and graph components",
+      "Data table with sorting",
+      "Form validation components",
+      "Detailed documentation",
+    ],
+    version: "2.0.1",
+    fileSize: "24 MB",
+    compatibility: "HTML5, CSS3, Vanilla JS",
+    author: "Priya Sharma",
+    featured: true,
+    createdAt: "2026-02-15",
+    updatedAt: "2026-04-05",
+    rating: 4.8,
+    downloads: 589,
+    serialKeys: ["ADMINX-001", "DASH-999X", "UITOOL22"],
+    paymentInfo: {
+      methods: ["UPI", "Paytm", "PhonePe", "Razorpay"],
+      upiId: "devvault@upi",
+      note: "Pay ₹799. Serial key sent to your email within 15 mins.",
+    },
+  },
