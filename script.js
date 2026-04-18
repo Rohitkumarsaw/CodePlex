@@ -1505,6 +1505,53 @@ function handleContactForm(e) {
   }
 }
 
+
+  
+  const contactForm = document.getElementById("contact-form");
+  const statusEl = document.getElementById("form-status");
+  const submitBtn = contactForm.querySelector(".contact-submit-btn");
+  const btnText = submitBtn.querySelector(".btn-text");
+
+  contactForm.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    statusEl.textContent = "";
+    submitBtn.disabled = true;
+    btnText.textContent = "Sending...";
+
+    const formData = new FormData(contactForm);
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json"
+        }
+      });
+
+      if (response.ok) {
+        statusEl.textContent = "Message sent successfully!";
+        statusEl.style.color = "green";
+        contactForm.reset();
+      } else {
+        const data = await response.json();
+        if (data.errors && data.errors.length > 0) {
+          statusEl.textContent = data.errors.map(err => err.message).join(", ");
+        } else {
+          statusEl.textContent = "Oops! Something went wrong. Please try again.";
+        }
+        statusEl.style.color = "red";
+      }
+    } catch (error) {
+      statusEl.textContent = "Network error. Please try again.";
+      statusEl.style.color = "red";
+    } finally {
+      submitBtn.disabled = false;
+      btnText.textContent = "Send Message";
+    }
+  });
+
 // ============================================================
 // UTILITIES
 // ============================================================

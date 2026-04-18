@@ -47,8 +47,8 @@ const categories = [
   { id: "ebooks", name: "E-books", icon: "📚" },
   { id: "tools", name: "Tools", icon: "🛠️" },
   { id: "plugins", name: "Plugins", icon: "🔌" },
-  { id: "React", name: "React Templates", icon: "⚛️" },
-  { id: "Node", name: "Node Templates", icon: "⚛️" },
+  { id: "React Templates", name: "React Templates", icon: "⚛️" },
+  { id: "Node Templates", name: "Node Templates", icon: "⚛️" },
 ];
 
 // state.activeCategory me category id store hogi
@@ -676,11 +676,11 @@ let products = [
   },
 
   {
-    id: "prod-014",
+    id: "prod-013",
     title: "PerfX Web Vitals Toolkit",
     shortDescription: "Complete Core Web Vitals audit + optimization toolkit (FREE)",
     fullDescription: "Production-grade performance toolkit with Lighthouse CI, Core Web Vitals monitoring, image optimization pipeline, critical CSS generator, font loading optimizer, and automated performance budgeting. Works with any stack.",
-    category: "Node",
+    category: "Node Templates",
     type: "free",
     price: 0,
     currency: "INR",
@@ -716,11 +716,11 @@ let products = [
     paymentInfo: null
   },
   {
-    id: "prod-013",
+    id: "prod-014",
     title: "PerfX Web Vitals Toolkit",
     shortDescription: "Complete Core Web Vitals audit + optimization toolkit (FREE)",
     fullDescription: "Production-grade performance toolkit with Lighthouse CI, Core Web Vitals monitoring, image optimization pipeline, critical CSS generator, font loading optimizer, and automated performance budgeting. Works with any stack.",
-    category: "React",
+    category: "React Templates",
     type: "free",
     price: 0,
     currency: "INR",
